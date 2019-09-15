@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="266.0">com.wrial.uml.Color</node>
+    <node x="312.0" y="266.0">com.wrial.aggregation.Screen</node>
+    <node x="145.0" y="266.0">com.wrial.aggregation.Monitor</node>
+    <node x="218.0" y="0.0">com.wrial.aggregation.Computer</node>
+    <node x="0.0" y="349.0">com.wrial.uml.Table</node>
+    <node x="0.0" y="0.0">com.wrial.uml.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.wrial.uml.Table" target="com.wrial.uml.Color">
+      <point x="0.0" y="-16.5" />
+      <point x="0.0" y="16.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="392.5" y="250.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
