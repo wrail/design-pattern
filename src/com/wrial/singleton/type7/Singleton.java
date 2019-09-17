@@ -21,6 +21,7 @@ public class Singleton {
         Singleton instance = SingletonEnum.INSTANCE.getInstance();
         Singleton instance1 = SingletonEnum.INSTANCE.getInstance();
         System.out.println(instance == instance1);
+
     }
 
 
