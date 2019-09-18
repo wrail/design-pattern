@@ -24,7 +24,7 @@ public class OrderPizza2 {
     private SimpleFactory simpleFactory;
 
     Pizza pizza;
-    public void setFactory(SimpleFactory simpleFactory) {
+    public void useFactory(SimpleFactory simpleFactory) {
         String orderType = null;
         this.simpleFactory = simpleFactory;
 

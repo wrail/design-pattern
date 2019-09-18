@@ -5,20 +5,19 @@ package com.wrial.factory.factoryMethod.order;
  * @Description
  */
 
-import com.wrial.factory.factoryMethod.pizza.BJCheesePizza;
-import com.wrial.factory.factoryMethod.pizza.BJPepperPizza;
-import com.wrial.factory.factoryMethod.pizza.Pizza;
+import com.wrial.factory.factoryMethod.pizza.*;
 
 public class LDOrderPizza extends OrderPizza {
+
     @Override
     Pizza createPizza(String orderType) {
 
         Pizza pizza = null;
         if (orderType.equals("cheese")){
-            pizza = new BJCheesePizza();
+            pizza = new LDCheesePizza();
             pizza.setName("LD Cheese Pizza");
         }else if (orderType.equals("pepper")){
-            pizza = new BJPepperPizza();
+            pizza = new LDPepperPizza();
             pizza.setName("LD Pepper Pizza");
         }
         return pizza;

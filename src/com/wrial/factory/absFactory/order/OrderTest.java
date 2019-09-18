@@ -9,7 +9,7 @@ public class OrderTest {
 
 
     public static void main(String[] args) {
-//        new OrderPizza(new BJFactory());
+        new OrderPizza(new BJFactory());
         new OrderPizza(new LDFactory());
     }
 }

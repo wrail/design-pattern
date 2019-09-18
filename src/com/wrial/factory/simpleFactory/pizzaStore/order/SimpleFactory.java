@@ -17,11 +17,6 @@ public class SimpleFactory {
     SimpleFactory() {
 
     }
-
-    SimpleFactory(String orderType) {
-        this.orderType = orderType;
-    }
-
     //创建pizza
     public Pizza createPizza(String orderType) {
         Pizza pizza = null;
@@ -32,7 +27,7 @@ public class SimpleFactory {
         } else if (orderType.equals("pepper")) {
             pizza = new PepperPizza();
             pizza.setName("胡椒披萨");
-        } else if (orderType.equals("greek")) {
+        } else if (orderType.equals("geek")) {
             pizza = new GeekPizza();
             pizza.setName("希腊披萨");
         }

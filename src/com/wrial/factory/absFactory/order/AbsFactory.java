@@ -8,6 +8,5 @@ package com.wrial.factory.absFactory.order;
 import com.wrial.factory.absFactory.pizza.Pizza;
 
 public interface AbsFactory {
-
-    public Pizza createPizza(String orderType);
+     Pizza createPizza(String orderType);
 }

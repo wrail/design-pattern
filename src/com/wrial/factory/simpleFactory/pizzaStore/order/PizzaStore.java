@@ -7,8 +7,8 @@ package com.wrial.factory.simpleFactory.pizzaStore.order;
 
 public class PizzaStore {
     public static void main(String[] args) {
-        new OrderPizza();
+//        new OrderPizza();
 
-        new OrderPizza2().setFactory(new SimpleFactory("cheese"));
+        new OrderPizza2().useFactory(new SimpleFactory());
     }
 }

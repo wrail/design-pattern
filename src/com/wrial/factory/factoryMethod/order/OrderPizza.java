@@ -1,10 +1,6 @@
 package com.wrial.factory.factoryMethod.order;
 
 import com.wrial.factory.factoryMethod.pizza.Pizza;
-import com.wrial.factory.simpleFactory.pizzaStore.pizza.CheesePizza;
-import com.wrial.factory.simpleFactory.pizzaStore.pizza.GeekPizza;
-import com.wrial.factory.simpleFactory.pizzaStore.pizza.PepperPizza;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,11 +17,15 @@ public abstract class OrderPizza {
         do {
             orderType = getType();
             pizza = createPizza(orderType);
+            if (pizza == null) {
+                System.out.println("无此披萨");
+                break;
+            }
             pizza.prepare();
             pizza.bake();
             pizza.cut();
             pizza.box();
-        }while (true);
+        } while (true);
     }
 
     private String getType() {

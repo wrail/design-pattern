@@ -5,7 +5,7 @@ package com.wrial.factory.factoryMethod.pizza;
  * @Description Pizza 抽象类
  */
 
-public abstract class LDPepperPizza extends Pizza {
+public  class LDPepperPizza extends Pizza {
 
 
 }
