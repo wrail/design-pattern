@@ -1,4 +1,4 @@
-package com.wrial.builder.improve;
+package com.wrial.builder.improve2;
 /*
  * @Author  Wrial
  * @Date Created in 20:59 2019/9/19
@@ -21,7 +21,7 @@ public class HouseDirector {
     }
 
     public House constructHouse(){
-        return houseBuilder.buildBasic().buildWalls().roofed().buildHouse();
+        return houseBuilder.buildHouse();
     }
 
 

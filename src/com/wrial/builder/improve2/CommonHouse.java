@@ -1,30 +1,30 @@
-package com.wrial.builder.improve;
+package com.wrial.builder.improve2;
 /*
  * @Author  Wrial
  * @Date Created in 20:56 2019/9/19
  * @Description
  */
 
-public class CommonHouse extends HouseBuilder{
+public class CommonHouse extends HouseBuilder {
 
     @Override
-    public HouseBuilder buildBasic() {
+    public HouseBuilder buildBasic(String basic) {
         System.out.println("普通房子打地基");
-        house.setBasic("2m");
+        house.setBasic(basic);
         return this;
     }
 
     @Override
-    public HouseBuilder buildWalls() {
+    public HouseBuilder buildWalls(String wall) {
         System.out.println("普通房子建墙");
-        house.setWall("4m");
+        house.setWall(wall);
         return this;
     }
 
     @Override
-    public HouseBuilder roofed() {
+    public HouseBuilder roofed(String roofed) {
         System.out.println("普通房子封顶");
-        house.setRoofed("水泥");
+        house.setRoofed(roofed);
         return this;
     }
 }

@@ -1,12 +1,11 @@
-package com.wrial.builder.traditional;
+package com.wrial.builder.traditional.house;
 /*
  * @Author  Wrial
  * @Date Created in 20:05 2019/9/19
  * @Description 传统方式
  */
 
-import com.wrial.builder.traditional.house.CommonHouse;
-import com.wrial.builder.traditional.house.HighHouse;
+
 
 public class Client {
 
