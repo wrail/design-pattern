@@ -1,4 +1,4 @@
-package com.wrial.prototype;
+package com.wrial.prototype.type2;
 /*
  * @Author  Wrial
  * @Date Created in 21:05 2019/9/17
@@ -7,15 +7,17 @@ package com.wrial.prototype;
 
 public class Sheep implements Cloneable{
 
-    public Sheep(String name, int age, String color) {
+    public Sheep(String name, int age, String color,HostMan hostMan) {
         this.name = name;
         this.age = age;
         this.color = color;
+        this.hostMan = hostMan;
     }
 
     private String name;
     private int age;
     private String color;
+    private HostMan hostMan;
 
     public String getName() {
         return name;
@@ -61,4 +63,11 @@ public class Sheep implements Cloneable{
 
     }
 
+    public HostMan getHostMan() {
+        return hostMan;
+    }
+
+    public void setHostMan(HostMan hostMan) {
+        this.hostMan = hostMan;
+    }
 }
